@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+
+	<head>
+		<title>Text - Responding to Users</title>
+	 <style type="text/css">
+
+		<!-- 
+		There are three pseudo-classes
+		that allow you to change the
+		appearance of elements when a
+		user is interacting with them.
+		
+		:hover
+		This is applied when a user
+		hovers over an element with a
+		pointing device such as a mouse.
+		This has commonly been used
+		to change the appearance of
+		links and buttons when a user
+		places their cursor over them. It
+		is worth noting that such events
+		do not work on devices that use
+		touch screens (such as the iPad)
+		because the screen is not able to
+		tell when someone is hovering
+		their finger over an element.
+		
+		:active
+		This is applied when an element
+		is being activated by a user; for
+		example, when a button is being
+		pressed or a link being clicked.
+		Sometimes this is used to make
+		a button or link feel more like it
+		is being pressed by changing the
+		style or position of the element
+		slightly.
+		
+		:focus
+		This is applied when an element
+		has focus. Any element that
+		you can interact with, such as a
+		link you can click on or any form
+		control can have focus.
+		
+		Focus occurs when a browser
+		discovers that you are ready to
+		interact with an element on the
+		page. For example, when your
+		cursor is in a form input ready
+		to accept typing, that element
+		is said to have focus. It is also
+		possible to use the tab key on
+		your keyboard to move through
+		the interactive items on a page.
+		When pseudo-classes are
+		used, they should appear in this
+		order: :link, :visited, :hover,
+		:focus, :active.-->
+
+		
+		input {
+			padding: 6px 12px 6px 12px;
+			border: 1px solid #665544;
+			color: #ffffff;}
+		
+		input {
+			padding: 6px 12px 6px 12px;
+			border: 1px solid #665544;
+			color: #ffffff;}
+			
+		input.submit:hover {
+			background-color: #665544;}
+		input.submit:active {
+			background-color: chocolate;}
+		input.text {
+			color: #cccccc;}
+		input.text:focus {
+			color: #665544;}
+		
+			
+	 </style>
+	</head>
+	
+	<body>
+		 <h1><strong>Text - Responding to Users</strong></h1>
+		<form action="http://www.example.org/search.php">
+		<input type="search" name="search"
+		 placeholder="Enter email address..." />
+		<input type="submit" value="Submit" />
+		</form>
+
+	</body>
+</html>

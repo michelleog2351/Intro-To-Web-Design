@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Centering Content</title>
+	<!--
+    If you want to center a box on
+	the page (or center it inside
+	the element that it sits in), you
+	can set the left-margin and
+	right-margin to auto.
+	
+	In order to center a box on the
+	page, you need to set a width
+	for the box (otherwise it will take
+	up the full width of the page).
+	
+	Once you have specified the
+	width of the box, setting the left
+	and right margins to auto will
+	make the browser put an equal
+	gap on each side of the box. This
+	centers the box on the page (or
+	within the element that the box
+	sits inside).
+	
+	The text-align property is
+	inherited by child elements. You
+	therefore also need to specify
+	the text-align property on the
+	centered box if you do not want
+	the text inside it to be centered.
+	-->
+	 <style type="text/css">
+		body {
+		text-align: center;}
+		
+		p {
+		width: 300px;
+		padding: 50px;
+		border: 20px solid #0088dd;}
+		
+		p.example {
+		margin: 10px auto 10px auto;
+		text-align: left;}
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Centering Content</strong></h1>
+		<p>Analog synt hesizers are often said to have a
+		 "warmer" sound than their digital
+		 counterparts.</p>
+		<p class="example">Analog synthesizers are often
+		 said to have a "warmer" sound than their
+		 digital counterparts.</p>
+	</body>
+</html>

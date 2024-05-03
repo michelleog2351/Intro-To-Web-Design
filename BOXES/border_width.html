@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Border Width</title>
+	<!--
+    The border-width property
+	is used to control the width
+	of a border. The value of this
+	property can either be given
+	in pixels or using one of the
+	following values:
+	thin
+	medium
+	thick
+
+   (You cannot use percentages
+	with this property.)
+
+	You can control the individual
+	size of borders using four
+	separate properties:
+	border-top-width
+	border-right-width
+	border-bottom-width
+	border-left-width
+
+	You can also specify different
+	widths for the four border values
+	in one property, like so:
+	border-width: 2px 1px 1px
+	2px;
+	
+	PS...If you've set the shorthand border property in CSS and the border is not showing, the most likely issue is that you did not define the border style. While the border-width and border-color property values can be omitted, the border-style property must be defined. Otherwise, it will not render.
+	-->
+	 <style type="text/css">
+		p.one {
+		border-style: solid;
+		border-width: 2px;}
+		p.two {
+		border-style: solid;
+		border-width: thick;}
+		p.three {
+		border-style: solid;
+		border-width: 1px 4px 12px 4px;}
+		
+		
+
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Border Width</strong></h1>
+	    <h2>Fender Stratocaster</h2>
+		<p class="one">Hohner's "Clavinet" is essentially an
+		 electric clavichord.</p>
+		<p class="two">Hohner's "Clavinet" is essentially an
+		 electric clavichord.</p>
+		<p class="three">Hohner's "Clavinet" is essentially
+		 an electric clavichord.</p>
+
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Limiting Width</title>
+	<!--
+    Some page designs expand and
+	shrink to fit the size of the user's
+	screen. In such designs, the
+	min-width property specifies
+	the smallest size a box can be
+	displayed at when the browser
+	window is narrow, and the
+	max-width property indicates
+	the maximum width a box can
+	stretch to when the browser
+	window is wide.
+
+	These are very helpful properties
+	to ensure that the content of
+	pages are legible (especially on
+	the smaller screens of handheld
+	devices). For example, you can
+	use the max-width property to
+	ensure that lines of text do not
+	appear too wide within a big
+	browser window and you can
+	use the min-width property
+	to make sure that they do not
+	appear too narrow.
+
+	You may find it helpful to try this
+	example out in your browser so
+	that you can see what happens
+	when you increase or decrease
+	the size of the browser window.
+	-->
+	 <style type="text/css">
+		td.description {
+		min-width: 450px;
+		max-width: 650px;
+		text-align: left;
+		padding: 5px;
+		margin: 0px;}
+		
+
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong></strong></h1>
+	    <tr>
+			<tr>
+			<th scope="col">Photo</th>
+			<th scope="col">Description</th>
+			<th scope="col">Price</th>
+			</tr>
+			<td img src="rhodes.jpg" width="200"
+			 height="100" alt="Fender Rhodes" /></td>
+			<td colspan="2" class="description">
+			 The Rhodes piano is an electro-mechanical piano, invented by Harold Rhodes during the fifties and later manufactured in a number of models, first in collaboration with Fender and after 1965 by CBS. It employs a piano-like keyboard with hammers that hit small metal lines, amplified by electromagnetic pickups.</td>
+			<td>$1400</td>
+			 
+			 <td img src="wurfitzer.jpg" width="200"
+			 height="100" alt="Fender Rhodes" /></td>
+			 <td colspan="2" class="description">
+			 The Wurfitzer electric piano is an electro-mechanical piano, created by Rudolph Wurfitzer Company of Mississippi. The Wurfitzer Company itself never called the instrument an "electric piano", instead inventing the phrase "Electric Piano" and using this as a trademark throughtout the production of the instrument. It employs a piano-like keyboard with hammers that hit small metal lines, amplified by electromagnetic pickups.</td>
+			<td>$1600</td>
+			
+			 <td img src="clavinet.jpg" width="200"
+			 height="100" alt="Fender Rhodes" /></td>
+			 <td colspan="2" class="description">
+			 The Clavinet is an electronically amplified clavichord manufactured by the Hohner company. Each key uses a rubber tip to perform a hammer on a string. Its distinctive bright staccato sound is often compared to that of an electric guitar. Various models were produced over the years, including the models I, II, L C D6 E7</td>
+			<td>$1200</td>
+		</tr>
+	</body>
+</html>

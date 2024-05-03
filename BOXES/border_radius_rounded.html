@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Rounded Corners</title>
+	<!--
+	CSS3 introduces the ability to
+	create rounded corners on any
+	box, using a property called
+	border-radius. The value
+	indicates the size of the radius
+	in pixels.
+	
+	Older browsers that do not
+	support this property will show a
+	box with right-angled corners.
+	
+	The -moz-border-radius
+	and -webkit-border-radius
+	properties are not in the CSS
+	specification. However, they
+	are used in some versions of
+	Chrome, Firefox, and Safari to
+	offer early support for this style
+	(and therefore can be used
+	to achieve this effect in more
+	browsers).
+	
+	You can specify individual values
+	for each corner of a box using:
+	border-top-right-radius
+	border-bottom-right-radius
+	border-bottom-left-radius
+	border-top-left-radius
+	
+	You can also use a shorthand
+	of these four properties (in
+	clockwise order: top, right,
+	bottom, left). 
+	For example: border-radius: 5px, 10px,
+	5px, 10px;
+	-->
+	 <style type="text/css">
+		p {
+			border: 5px solid deeppink;
+			padding: 20px;
+			width: 275px;
+			text-align: center;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;}
+
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Box Shadows - Border Radius (Rounded Corners)</strong></h1>
+		<p>Pet Sounds featured a number of unconventional
+		 instruments such as bicycle bells, buzzing
+		 organs, harpsichords, flutes, Electro-Theremin,
+		 dog whistles, trains, Hawaiian-sounding string
+		 instruments, Coca-Cola cans and barking dogs.</p>
+	</body>
+</html>

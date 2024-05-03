@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Hiding Boxes</title>
+	<!--
+	The visibility property allows
+	you to hide boxes from users
+	but It leaves a space where the
+	element would have been.
+	This property can take two
+	values:
+
+	hidden
+	This hides the element.
+
+	visible
+	This shows the element.
+
+	If the visibility of an element
+	is set to hidden, a blank space
+	will appear in its place.
+
+	If you do not want a blank space
+	to appear, then you should use
+	the display property with
+	a value of none instead.
+	-->
+	 <style type="text/css">
+		li {
+			display: inline;
+			margin-right: 10px;}
+		li.coming-soon {
+			visibility: hidden;}
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Visibility (Hiding Boxes)</strong></h1>
+		<ul>
+			<li>Home</li>
+			<li>Products</li>
+			<li class="coming-soon">Services</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</body>
+</html>

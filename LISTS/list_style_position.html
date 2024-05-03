@@ -1,0 +1,61 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Lists - Positioning The Marker</title>
+	<!--
+	Lists are indented into the page
+	by default and the list-styleposition property indicates
+	whether the marker should
+	appear on the inside or the
+	outside of the box containing the
+	main points.
+	This property can take one of
+	two values:
+	outside
+	The marker sits to the left of the
+	block of text. (This is the default
+	behaviour if this property is not
+	used.)
+	inside
+	The marker sits inside the box of
+	text (which is indented).
+	In the example shown, the width
+	of the list has been limited to 150
+	pixels. This ensures that the text
+	wraps onto a new line so you can
+	see how the value of inside sits
+	the bullet inside the first line of
+	text.
+	A margin has been added to
+	each list item so that there is a
+	clear gap between each
+	-->
+	 <style type="text/css">
+		ul {
+			width: 150px;}
+			li {
+			margin: 10px;}
+			ul.illuminations {
+			list-style-position: outside;}
+			ul.season {
+			list-style-position: inside;}
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Lists - Positioning The Marker</strong></h1>
+		<ul class="illuminations">
+			<li>That idol, black eyes and ...</li>
+			<li>Gracious son of Pan! ...</li>
+			<li>When the world is reduced ...</li>
+			</ul>
+			<ul class="season">
+			<li>Once, if my memory serves ...</li>
+			<li>Hadn't I once a youth ...</li>
+			<li>Autumn already! ...</li>
+		</ul>
+
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="UTF-16">	
+	<head>
+	 <title>Styling Text Inpts</title>
+	<!--
+	This example demonstrates the
+	CSS properties commonly used
+	with text inputs, most of which
+	you have already met.
+	font-size sets the size of the
+	text entered by the user.
+	color sets the text color, and
+	background-color sets the
+	background color of the input.
+	border adds a border around
+	the edge of the input box, and
+	border-radius can be used
+	to create rounded corners (for
+	browsers that support this
+	property).
+	The :focus pseudo-class is
+	used to change the background
+	color of the text input when it
+	is being used, and the :hover
+	psuedo-class applies the same
+	styles when the user hovers over
+	them.
+	background-image adds a
+	background image to the box.
+	Because there is a different
+	image for each input, we are
+	using an attribute selector
+	looking for the value of the id
+	attribute on each input.
+	-->
+	 <style type="text/css">
+		input {
+				font-size: 120%;
+				color: #5a5854;
+				background-color: #f2f2f2;
+				border: 1px solid #bdbdbd;
+				border-radius: 5px;
+				padding: 5px 5px 5px 30px;
+				background-repeat: no-repeat;
+				background-position: 8px 9px;
+				display: block;
+				margin-bottom: 10px;}
+				input:focus {
+				background-color: #ffffff;
+				border: 1px solid #b1e1e4;}
+				
+				input#email {
+				background-image: url("images/email.png");}
+				
+				input#twitter {
+				background-image: url("images/twitter.png");}
+				
+				input#web {
+				background-image: url("images/web.png");}
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Styling Text Inputs</strong></h1>
+		<form action="http://www.example.com/login.php">
+		
+		<p id="email">
+		<input type="text" name="username" size="15" maxlength="30" /></p>
+		</form>
+		
+		<form action="http://www.example.com/login.php">
+		
+		<p id="">
+		<input type="text" name="username" size="15" maxlength="30" /></p>
+		</form>
+		
+		<form action="http://www.example.com/login.php">
+		
+		<p>
+		<input type="text" name="username" size="15" maxlength="30" /></p>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="UTF-16">	
+	<head>
+	 <title>Layout - Clearing Floats</title>
+	<!--
+	The clear property allows you
+	to say that no element (within
+	the same containing element)
+	should touch the left or righthand sides of a box. It can take
+	the following values:
+	left
+	The left-hand side of the box
+	should not touch any other
+	elements appearing in the same
+	containing element.
+	right
+	The right-hand side of the
+	box will not touch elements
+	appearing in the same containing
+	element.
+	both
+	Neither the left nor right-hand
+	sides of the box will touch
+	elements appearing in the same
+	containing element.
+	none
+	Elements can touch either side.
+	In this example, the fourth
+	paragraph has a class called
+	clear. The CSS rule for this
+	class uses the clear property
+	to indicate that nothing should
+	touch the left-hand side of it. The
+	fourth paragraph is therefore
+	moved further down the page
+	so no other element touches its
+	left-hand side
+	-->
+	 <style type="text/css">
+		body {
+			width: 750px;
+			font-family: Arial, Verdana, sans-serif;
+			color: #665544;}
+		p {
+			width: 230px;
+			float: left;
+			margin: 5px;
+			padding: 5px;
+			background-color: #efefef;}
+		
+		.clear {
+			clear: left;}
+	 </style>
+	</head>
+	
+	<body>
+		<h1>The Evolution of the Bicycle</h1>
+
+		<p class="clear">In 1817 Baron von Drais invented a walking
+		 machine that would help him get around the
+		 royal gardens faster; two same-size in-line wheels, the front one steerable, mounted in a frame upon which you straddled. The device was propelled by pushing your feet against the ground, thus rolling yourself and the device forward in a sort of gliding walk.</p>
+		 
+		 <p>The machine became known as the Draisienne (or "hobby horse"). It was made entirely of wood. This enjoyed a short lived popularity as a fad, not being practical for transportation in any other place than a well maintained pathway such as in a park or garden.</p>
+		 
+		 <p>The next appearance of a two-wheeled riding machine was in 1865, whcich pedals were applied directly to the front wheel. This machine was known as the velocipede (meaning "fast foot") as well as the "bone shaker", since it's wooden structure combined with the cobblestone roads of the day made for an extremely uncomfortable ride. They also became a fad and indoor riding academies, similar to roller rinks, could be found in large cities.</p>
+
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Border Images</title>
+	<!--
+	The border-image property
+	applies an image to the border of
+	any box. It takes a background
+	image and slices it into nine
+	pieces.
+	
+	Here is the image. I have
+	added marks where it is
+	sliced in the example,
+	taking 18 pixels from each corner
+	to place an entire circle in each
+	corner. The corner slices are
+	always placed in the four corners
+	of the box, but we have a choice
+	whether the sides are stretched
+	or repeated.
+	
+	This property requires three
+	pieces of information:
+	1: The URL of the image
+	2: Where to slice the image
+	3: What to do with the straight
+	edges; the possible values are:
+	 stretch stretches the image
+	 repeat repeats the image
+	 round like repeat but if the
+	tiles do not fit exactly, scales
+	the tile image so they will
+	The box must also have a border
+	width for the image to be shown.
+
+	The -moz-border-image
+	and -webkit-border-image
+	properties are not in the CSS
+	specification but help earlier
+	versions of Chrome, Firefox, and
+	Safari display this effect.
+	-->
+	 <style type="text/css">
+		p.one {
+		-moz-border-image: url("images/dots.gif")
+		 11 11 11 11 stretch;
+		-webkit-border-image: url("images/dots.gif")
+		 11 11 11 11 stretch;
+		border-image: url("images/dots.gif")
+		 11 11 11 11 stretch;}
+		p.two {
+		-moz-border-image: url("images/dots.gif")
+		 11 11 11 11 round;
+		-webkit-border-image: url("images/dots.gif")
+		 11 11 11 11 round;
+		border-image: url("images/dots.gif")
+		 11 11 11 11 round;}
+
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Border Images</strong></h1>
+		<p class="one"></p>
+		<p class="two"></p>
+		<p class="three"></p>
+	</body>
+</html>

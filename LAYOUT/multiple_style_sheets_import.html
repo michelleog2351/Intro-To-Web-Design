@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="UTF-16">	
+	<head>
+	 <title>Layout - Multiple Style Sheets</title>
+	 <link rel="stylesheet" type="text/css"
+	 href="css/styles.css" /> 
+	<!--
+	Some web page authors split
+	up their CSS style rules into
+	separate style sheets. For
+	example, they might use one
+	style sheet to control the layout
+	and another to control fonts,
+	colors and so on.
+	Some authors take an even
+	more modular approach
+	to stylesheets, creating
+	separate stylesheets to control
+	typography, layout, forms,
+	tables, even different styles for
+	each sub-section of a site.
+	There are two ways to add
+	multiple style sheets to a page:
+	1: Your HTML page can link
+	to one style sheet and that
+	stylesheet can use the @import
+	rule to import other style sheets.
+	2: In the HTML you can use a
+	separate <link> element for
+	each style sheet.
+	The example on this page
+	uses one <link> element in
+	the HTML to link to a style
+	sheet called styles.css. This
+	stylesheet then uses the
+	@import rule to import the
+	typography.css and
+	tables.css files. 
+	-->
+	 <style type="text/css">
+
+		
+		@import url("tables.css");
+		@import url("typography.css");
+		body {
+		color: #666666;
+		background-color: #f8f8f8;
+		text-align: center;}
+		#page {
+		width: 600px;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid #d6d6d6;
+		padding: 20px;}
+		h3 {
+		color: #547ca0;}
+	 </style>
+	</head>
+	
+	<body>
+		<h1>Multiple Style Sheets - Import</h1>
+		<!-- HTML page content here -->
+	</body>
+</html>

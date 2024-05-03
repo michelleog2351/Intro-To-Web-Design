@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+
+	<head>
+		<title>Text - More Font Choice</title>
+	 <style type="text/css">
+ 
+		 <!-- @font-face allows you to use
+			a font, even if it is not installed
+			on the computer of the person
+			browsing, by allowing you to
+			specify a path to a copy of the
+			font, which will be downloaded if
+			it is not on the user's machine.
+			
+			Because this technique allows
+			a version of the font to be
+			downloaded to the user's
+			computer, it is important that the
+			license for the font permits it to
+			be used in this way. 
+			
+			There are some sites that give
+			you access to use commercial
+			fonts, because they negotiated
+			permission to let their customers
+			use these fonts for a fee:
+			www.typekit.com
+			www.kernest.com
+			www.fontspring.com
+			
+			Google also provides open
+			source fonts. Rather than adding
+			the @font-face rule to your own
+			style sheet, you link to a CSS file
+			and font files on their servers:
+			www.google.com/webfonts-->
+			
+			@font-face {
+			font-family: 'ChunkFiveRegular'; 
+			<!-- 
+			font-family
+			This specifies the name of the
+			font. This name can then be used
+			as a value of the font-family
+			property in the rest of the style
+		    sheet-->
+			
+			src: url('fonts/chunkfive.eot');} 
+			<!-- src...This specifies the path to the font. -->
+			h1, h2 {
+			font-family: ChunkFiveRegular, Georgia, serif;}
+	 </style>
+	</head>
+	
+	<body>
+		 <h1><strong>Briards</strong></h1>
+		 <p class="credits">by Ivy Duckett</p>
+		 <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+		 Briard">briard</a>, or berger de brie, is
+		 a large breed of dog traditionally used as
+		 a herder and guardian of sheep.</p>
+		 
+		 <h1><strong>Breed History</strong></h1>
+		 <p>The briard, which is believed to have originated in france, has been bred for centuries to herd and to protect sheep. The breed was used by the French army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+	</body>
+</html>

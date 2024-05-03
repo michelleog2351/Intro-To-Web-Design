@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+
+	<head>
+		<title>Text - First Letter or Line</title>
+	 <style type="text/css">
+
+		<!-- 
+		You can specify different values
+		for the first letter or first line of
+		text inside an element using
+		:first-letter and
+		:first-line.
+		
+		Technically these are not
+		properties. They are known as
+		pseudo-elements.
+		You specify the pseudo-element
+		at the end of the selector, and
+		then specify the declarations as
+		you would normally for any other
+		element.
+		
+		CSS introduces both pseudoelements and pseudo-classes.
+		A pseudo-element acts like an
+		extra element is in the code. In
+		the case of the :first-letter
+		and :first-line pseudo
+		elements, it is as if there is an
+		extra element around the first
+		letter or the first line which can
+		have its own styles applied.
+		A pseudo-class acts like an
+		extra value for a class attribute.
+		In the case of the :visited
+		pseudo-class, which you meet
+		on the next page, it allows you
+		to have different styles for links
+		that have been visited. Similarly,
+		the :hover pseudo-class allows
+		you to style elements differently
+		when a user hovers over them.-->
+		
+		p.intro:first-letter {
+		font-size: 200%;}
+		p.intro:first-line {
+		font-weight: bold;}
+		
+		p.intro:first-letter {
+		font-size: 200%;}
+		p.intro:first-line {
+		font-weight: bold;}
+			
+	 </style>
+	</head>
+	
+	<body>
+		 <h1><strong>Briards</strong></h1>
+		 <p class="credits">by Ivy Duckett</p>
+		 <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/Briard">briard</a>, or berger de brie, is a large breed of dog traditionally used as
+		 a herder and guardian of sheep.</p>
+		 
+		 <h2><strong>Breed History</strong></h2>
+		 <p>The briard, which is believed to have originated in france, has been bred for centuries to herd and to protect sheep. The breed was used by the French army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+
+	</body>
+</html>

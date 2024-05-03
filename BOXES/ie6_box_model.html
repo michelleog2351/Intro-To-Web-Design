@@ -1,0 +1,50 @@
+
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - IE6 Box Model</title>
+	<!--
+    When you specify the width of
+	a box, any padding or margin
+	should be added to the width of
+	it. Internet Explorer 6, however,
+	has a quirk whereby it includes
+	the padding and margins in the
+	width of the box.
+	The way around this is to ensure
+	that you provide a DOCTYPE
+	declaration for the HTML page.
+	(DOCTYPE declarations were
+	covered on page 181.) You can
+	use either the HTML5, HTML
+	4 strict, or HTML 4 transitional
+	DOCTYPE declarations to
+	ensure that IE6 follows the
+	correct box model.
+	-->
+	 <style type="text/css">
+		body {
+		text-align: center;}
+		
+		p {
+		width: 300px;
+		padding: 50px;
+		border: 20px solid #0088dd;}
+		
+		p.example {
+		margin: 10px auto 10px auto;
+		text-align: left;}
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Result in IE6 without DOCTYPE</strong></h1>
+		<p>Analog synt hesizers are often said to have a
+		 "warmer" sound than their digital
+		 counterparts.</p>
+		<p class="example">Analog synthesizers are often
+		 said to have a "warmer" sound than their
+		 digital counterparts.</p>
+	</body>
+</html>

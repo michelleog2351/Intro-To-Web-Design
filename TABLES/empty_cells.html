@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Tables - Border On Empty Cells</title>
+	<!--
+	If you have empty cells in
+	your table, then you can use
+	the empty-cells property to
+	specify whether or not their
+	borders should be shown.
+	Since browsers treat empty cells
+	in different ways, if you want to
+	explicitly show or hide borders
+	on any empty cells then you
+	should use this property.
+	It can take one of three values:
+	show
+	This shows the borders of any
+	empty cells.
+	hide
+	This hides the borders of any
+	empty cells.
+	inherit
+	If you have one table nested
+	inside another, the inherit
+	value instructs the table cells to
+	obey the rules of the containing
+	table.
+	In the first table on the left, you
+	can see that the border of the
+	empty cell is showing. In the
+	second table, it is hidden.
+
+	-->
+	 <style type="text/css">
+		td {
+			border: 1px solid #0088dd;
+			padding: 15px;}
+			table.one {
+			empty-cells: show;}
+			table.two {
+			empty-cells: hide;}
+		tr.one:hover {
+				background-color: deeppink;}
+		tr.two:hover {
+				background-color: skyblue;}
+	 </style>
+	</head>
+	
+	<body>
+		<h1>Tables - Border on Empty Cells</h1>
+		<table class="one">
+		<tr class="one">
+		 <td>1</td>
+		 <td>2</td>
+		</tr>
+		
+		<tr class="one">
+		 <td>3</td>
+		 <td></td>
+		</tr>
+		</table>
+		<br>
+		
+		<table class="two">
+		<tr class="two">
+		 <td>1</td>
+		 <td>2</td>
+		</tr>
+		<tr class="two">
+		 <td>3</td>
+		 <td></td>
+		</tr>
+		</table>
+
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="UTF-16">	
+	<head>
+	 <title>Layout - Multiple Style Sheets - Link</title>
+	 <link rel="stylesheet" type="text/css"
+	 href="css/site.css" />
+	 <link rel="stylesheet" type="text/css"
+	 href="css/tables.css" />
+	 <link rel="stylesheet" type="text/css"
+	 href="css/typography.css" />  
+	<!--
+	On this page you can see the
+	other technique for including
+	multiple style sheets. Inside the
+	<head> element is a separate
+	<link> element for each style
+	sheet.
+	The contents of site.css are
+	identical to styles.css on the
+	left hand page, except the code
+	does not contain @import rules.
+	As with all style sheets, if two
+	rules apply to the same element
+	then rules that appear later in a
+	document will take precedence
+	over previous rules.
+	In the example on this page,
+	any rules in typography.css
+	would take precedence over
+	rules in site.css (because the
+	typography rules are included
+	after the other rules).
+	In the example on the previous
+	page, the rules in styles.css
+	would take precedence over the
+	rules in typography.css. This
+	is because when the @import
+	rule is used, that is the point at
+	which the browser considers the
+	rules live.
+	-->
+	 <style type="text/css">
+
+		
+		@import url("tables.css");
+		@import url("typography.css");
+		body {
+		color: #666666;
+		background-color: #f8f8f8;
+		text-align: center;}
+		#page {
+		width: 600px;
+		text-align: left;
+		margin-left: auto;
+		margin-right: auto;
+		border: 1px solid #d6d6d6;
+		padding: 20px;}
+		h3 {
+		color: #547ca0;}
+	 </style>
+	</head>
+	
+	<body>
+		<h1>Multiple Style Sheets - Link</h1>
+		<!-- HTML page content here -->
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="UTF-16">	
+	<head>
+	 <title>Aligning Images Using CSS</title>
+	<!--
+	Rather than using the <img>
+	element's align attribute, web
+	page authors are increasingly
+	using the float property to align
+	images. There are two ways that
+	this is commonly achieved:
+	1: The float property is added
+	to the class that was created to
+	represent the size of the image
+	(such as the small class in our
+	example).
+	2: New classes are created with
+	names such as align-left or
+	align-right to align the images
+	to the left or right of the page.
+	These class names are used in
+	addition to classes that indicate
+	the size of the image.
+	In this example you can see the
+	align-left and align-right
+	classes used to align the image.
+	It is also common to add a
+	margin to the image to ensure
+	that the text does not touch their edges.
+	-->
+	 <style type="text/css">
+		
+		h1 {text-align: center;}
+		img.align-left {
+		float: left;
+		margin-right: 10px;}
+		img.align-right {
+		float: right;
+		margin-left: 10px;}
+		img.medium {
+		width: 250px;
+		height: 250px;}
+	 </style>
+	</head>
+	
+	<body>
+		<h1>Aligning Images in CSS</h1>
+		<p><img src="magnolia.jpg"
+		 class="align-left medium" alt="Magnolia" />
+		 <b><i>Magnolia</i></b> is a large genus that contains over 200 flowering plant species. It is named after french botanist Pierre Magnol, and having evolved before bees appeared the flowers were developed to encourage pollination by beetles.
+		<p><img src="magnolia.jpg"
+		 class="align-right medium" alt="Magnolia" />
+		 Some mangolias, such as <i>Magnolia stellata</i> and <i>Magnolia soulangeana</i>, flower quite early in the spring before the leaves open. Others flower in late spring or early summer, such as <i>Magnolia grandiflora.</i></p>
+
+	</body>
+</html>

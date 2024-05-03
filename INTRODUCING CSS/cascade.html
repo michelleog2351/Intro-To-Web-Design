@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Cascade</title>
+	</head>
+<meta charset="UTF-16">	
+	<body>
+		<h1><strong><u>Cascade</u></strong></h1>
+		<style>
+		<!--If there are two or more rules
+			that apply to the same element,
+			it is important to understand
+			which will take precedence.
+			
+			LAST RULE
+			If the two selectors are identical,
+			the latter of the two will take
+			precedence. Here you can see
+			the second i selector takes
+			precedence over the first.
+			
+			SPECIFICITY
+			If one selector is more specific
+			than the others, the more
+			specific rule will take precedence
+			over more general ones. In this
+			example:
+			h1 is more specific than *
+			p b is more specific than p
+			p#intro is more specific than p
+			
+			IMPORTANT
+			You can add !important after
+			any property value to indicate
+			that it should be considered
+			more important than other rules
+			that apply to the same element.
+			-->
+		* {
+			font-family: Arial, Verdana, sans-serif;}
+			h1 {
+			font-family: "Courier New", monospace;}
+			i {
+			color: green;}
+			i {
+			color: red;}
+			b {
+			color: pink;}
+			p b {
+			color: blue !important;}
+			p b {
+			color: violet;}
+			p#intro {
+			font-size: 100%;}
+			p {
+			font-size: 75%;}
+		</style>
+		
+		<h1>Potatoes</h1>
+		
+		<p id="intro">There are <i>dozens</i> of different <b>potato</b> varieties.</p>
+		<p>They are usually described as early, second early and maincrop potatoes.</p>
+	</body>
+</html>

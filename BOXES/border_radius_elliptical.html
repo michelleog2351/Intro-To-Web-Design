@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Elliptical Shapes</title>
+	<!--
+	To create more complex shapes,
+	you can specify different
+	distances for the horizontal and
+	the vertical parts of the rounded
+	corners.
+	
+	For example, this will create a
+	radius that is wider than it is tall:
+	border-radius: 80px 50px;
+	You can target just one corner
+	using the individual properties
+	for that corner:
+	border-top-left-radius:
+	80px 50px;
+	
+	There is also a shorthand for
+	targetting all four corners at
+	once; first you specify the four
+	horizontal values, then the four
+	vertical values, as shown in the
+	second shape on the left.
+	
+	You can even create a circle by
+	taking a square box and making
+	the border-radius the same
+	height as the square, as shown in
+	the third shape on the left.
+	-->
+	 <style type="text/css">
+		p.one {
+		border-top-left-radius: 80px 50px;
+		-moz-border-radius-top-left: 80px 50px;
+		-webkit-border-radius-top-left: 80px 50px;}
+		p.two {
+		border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+		-moz-border-radius: 1em 4em 1em 4em
+		 / 2em 1em 2em 1em;
+		-webkit-border-radius: 1em 4em 1em 4em
+		 / 2em 1em 2em 1em;}
+		p.three {
+		padding: 0px;
+		border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;}
+
+
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Boxes - Border Radius (Elliptical Shapes)</strong></h1>
+		<p class="one"></p>
+		<p class="two"></p>
+		<p class="three"></p>
+	</body>
+</html>

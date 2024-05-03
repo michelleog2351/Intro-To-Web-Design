@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+
+	<head>
+		<title>Text - Alignment</title>
+	 <style type="text/css">
+
+		 <!-- 
+		The vertical-align property is
+		a common source of confusion.
+		It is not intended to allow you to
+		vertically align text in the middle
+		of block level elements such as
+		<p> and <div>, although it does
+		have this effect when used with
+		table cells (the <td> and <th>
+		elements).
+		
+		It is more commonly used with
+		inline elements such as <img>,
+		<em>, or <strong> elements.
+		When used with these elements,
+		it performs a task very similar to
+		the HTML align attribute used
+		on the <img> element, which
+		you met on pages 103-106. The
+		values it can take are:
+		
+		baseline
+		sub
+		super
+		top
+		text-top
+		middle
+		bottom
+		text-bottom
+		
+		It can also take a length (usually
+		specified in pixels or ems) or a
+		percentage of the line height.-->
+		
+		#six-months {
+		vertical-align: text-top;}
+		#six-months {
+		vertical-align: text-top;}
+		#one-year {
+		vertical-align: baseline;}
+		#two-years {
+		vertical-align: text-bottom;}
+
+			
+			
+	 </style>
+	</head>
+	
+	<body>
+		 <a href="text_align.html">Briards</a>
+		 <h1><strong>Briard Life Stages</strong></h1>
+		 <p><img src="briard.jpg" width="50" height="50" id="six-months">Six months</p>
+		 <p><img src="briard.jpg" width="50" height="50" id="one-year">One year</p>
+		 <p><img src="briard.jpg" width="50" height="50" id="two-years">Two years</p>
+
+	</body>
+</html>

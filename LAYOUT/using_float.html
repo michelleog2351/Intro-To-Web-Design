@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en">
+<meta charset="UTF-16">	
+	<head>
+	 <title>Layout - Using Float To Place Elements Side-By-Side-</title>
+	<!--
+	A lot of layouts place boxes
+	next to each other. The float
+	property is commonly used to
+	achieve this.
+	When elements are floated, the
+	height of the boxes can affect
+	where the following elements sit.
+	In this example, you can see six
+	paragraphs, each of which has a
+	width and a float property set.
+	The fourth paragraph does not
+	go across to the left hand edge
+	of the page as one might expect.
+	Rather it sits right under the
+	third paragraph.
+	The reason for this is that the
+	fourth paragraph has space to
+	start under the third paragraph,
+	but it cannot go any further to
+	the left because the second
+	paragraph is in the way.
+	Setting the height of the
+	paragraphs to be the same
+	height as the tallest paragraph
+	would solve this issue, but it
+	is rarely suited to real world
+	designs where the amount of
+	text in a paragraph or column
+	may vary. It is more common
+	to use the clear property
+	(discussed on the next page) to
+	solve this issue.
+	-->
+	 <style type="text/css">
+		body {
+			width: 750px;
+			font-family: Arial, Verdana, sans-serif;
+			color: #665544;}
+		p {
+			width: 230px;
+			float: left;
+			margin: 5px;
+			padding: 5px;
+			background-color: #efefef;}
+	 </style>
+	</head>
+	
+	<body>
+		<h1>The Evolution of the Bicycle</h1>
+
+		<p>In 1817 Baron von Drais invented a walking
+		 machine that would help him get around the
+		 royal gardens faster; two same-size in-line wheels, the front one steerable, mounted in a frame upon which you straddled. The device was propelled by pushing your feet against the ground, thus rolling yourself and the device forward in a sort of gliding walk.</p>
+		 
+		 <p>The machine became known as the Draisienne (or "hobby horse"). It was made entirely of wood. This enjoyed a short lived popularity as a fad, not being practical for transportation in any other place than a well maintained pathway such as in a park or garden.</p>
+		 
+		 <p>The next appearance of a two-wheeled riding machine was in 1865, whcich pedals were applied directly to the front wheel. This machine was known as the velocipede (meaning "fast foot") as well as the "bone shaker", since it's wooden structure combined with the cobblestone roads of the day made for an extremely uncomfortable ride. They also became a fad and indoor riding academies, similar to roller rinks, could be found in large cities.</p>
+
+	</body>
+</html>

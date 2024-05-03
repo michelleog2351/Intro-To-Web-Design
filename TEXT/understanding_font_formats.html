@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">	
+
+	<head>
+		<title>Text - Understanding Font Format</title>
+	 <style type="text/css">
+ 
+		 <!-- Different browsers support
+			different formats for fonts
+			(in the same way that they
+			support different audio and
+			video formats), so you will need
+			to supply the font in several
+			variations to reach all browsers.
+			
+			If you do not have all of these
+			formats for your font, you can
+			upload the font to a website
+			called FontSquirrel where they
+			will convert it for you:
+			
+			www.fontsquirrel.com/
+			fontface/generator
+			
+			Font Squirrel also provides you
+			with the CSS code for the
+			@font-face rule. This is very
+			helpful because, when you
+			are dealing with multiple font
+			formats, the src and format
+			properties of the @font-face
+			rule can get rather complicated.
+			
+			The various font formats should
+			appear in your code in this order:
+			1: eot
+			2: woff
+			3: ttf/otf
+			4: svg-->
+			@font-face {
+			font-family: 'ChunkFiveRegular';
+			src: url('fonts/chunkfive.eot');
+			src: url('fonts/chunkfive.eot?#iefix')
+			 format('embedded-opentype'),
+			 url('fonts/chunkfive.woff') format('woff'),
+			 url('fonts/chunkfive.ttf')
+			 format('truetype'),
+			 url('fonts/chunkfive.svg#ChunkFiveRegular')
+			 format('svg');}
+	 </style>
+	</head>
+	
+	<body>
+		 <h1><strong>Briards</strong></h1>
+		 <p class="credits">by Ivy Duckett</p>
+		 <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+		 Briard">briard</a>, or berger de brie, is
+		 a large breed of dog traditionally used as
+		 a herder and guardian of sheep.</p>
+		 
+		 <h1><strong>Breed History</strong></h1>
+		 <p>The briard, which is believed to have originated in france, has been bred for centuries to herd and to protectsheep. The breed was used by the French army as sentries, messengers and to search for wounded soldiers because of its fine sense of hearing. Briards were used in the First World War almost to the point of extinction. Currently the population of briards is slowly recovering. Charlemagne, Napoleon, Thomas Jefferson and Lafayette all owned briards.</p>
+	</body>
+</html>

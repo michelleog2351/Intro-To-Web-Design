@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html>
+<meta charset="UTF-16">	
+	<head>
+	 <title>Boxes - Display</title>
+	<!--
+	display
+    The display property allows
+	you to turn an inline element
+	into a block-level element or vice
+	versa, and can also be used to
+	hide an element from the page.
+	The values this property can
+	take are:
+	
+	inline
+	This causes a block-level
+	element to act like an inline
+	element.
+	
+	block
+	This causes an inline element to
+	act like a block-level element.
+	
+	inline-block
+	This causes a block-level
+	element to flow like an inline
+	element, while retaining other
+	features of a block-level element.
+	
+	none
+	This hides an element from the
+	page. In this case, the element
+	acts as though it is not on the
+	page at all (although a user could
+	still see the content of the box if
+	they used the view source option
+	in their browser).
+	
+	If you use this property, it is
+	important to note that inline
+	boxes are not supposed to create
+	block-level elements.
+	
+	In this example you can see
+	a list. Each item in the list is
+	usually treated as a block-level
+	element, but the rule for the
+	<li> elements indicates that
+	they should be treated as inline
+	elements, which means they will
+	sit alongside each other rather
+	than appearing on new lines.
+	
+	This technique is often used to
+	create navigation for a site, and
+	in this example a margin has
+	been added to the right of each
+	of the items to separate them
+	out. The rule that applies to the
+	<li> element whose class is
+	coming-soon has been hidden
+	as if it were not in the page at all.
+	-->
+	 <style type="text/css">
+		li {
+			display: inline;
+			margin-right: 10px;}
+		li.coming-soon {
+			display: none;}
+				
+	 </style>
+	</head>
+	
+	<body>
+		<h1><strong>Display</strong></h1>
+		<ul>
+			<li>Home</li>
+			<li>Products</li>
+			<li class="coming-soon">Services</li>
+			<li>About</li>
+			<li>Contact</li>
+		</ul>
+	</body>
+</html>
