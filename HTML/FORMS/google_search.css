@@ -1,0 +1,26 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+  }
+
+  form {
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  input[type="text"] {
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    height: 40px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+</style>

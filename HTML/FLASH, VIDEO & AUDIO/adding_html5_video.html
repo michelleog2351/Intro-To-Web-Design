@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">
+	<head>
+		<title>Adding HTML5 Video</title>
+	</head>
+	
+	<body>
+		 <h1><strong>Adding HTML5 Video</strong></h1>
+		 <!-- <video>
+		 has a number of attributes which allow
+		 you to control video playback-->
+		
+		<!-- src...This attribute specifies the path to the video.-->
+		
+		<video src="video/puppy.mp4"
+		 
+		 <!-- poster...This attribute allows you to
+		specify an image to show while
+		the video is downloading or until
+		the user tells the video to play-->
+		
+		poster="images/puppy.jpg"
+		width="400" height="300" <!-- width, height...These attributes specify the size of the player in pixels.-->
+		 
+		preload 
+		<!-- This attribute tells the browser what to do when the page
+		loads. It can have one of three values:
+		
+		none
+		The browser should not load
+		the video until the user presses
+		play.
+		
+		auto
+		The browser should download
+		the video when the page loads.
+		
+		metadata
+		The browser should just collect
+		information such as the size,
+		first frame, track list, and
+		duration.-->
+		
+		controls <!--When used, this attribute
+				indicates that the browser
+				should supply its own controls
+				for playback -->
+				
+		loop> <!-- When used, this attribute
+				indicates that the video should
+				start playing again once it has
+				ended.-->
+		 <p>A video of a puppy playing in the snow</p>
+		 
+			 <!-- autoplay...When used, this attribute
+			specifies that the file should play
+			automatically.-->
+		</video>
+	</body>
+	
+</html>

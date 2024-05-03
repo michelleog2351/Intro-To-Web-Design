@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-16">
+	<head>
+		<title>Multiple Video Sources</title>
+	</head>
+	
+	<body>
+		<h1><strong>Adding Multiple Video Sources</strong></h1>
+		 <video poster="images/puppy.jpg" width="400"
+		 height="320" preload controls loop>
+		 <!-- To specify the location of the file
+		to be played, you can use the
+		<source> element inside the
+		<video> element. -->
+		
+		<!--src...This attribute specifies the path
+		to the video.-->
+		 <source src="video/puppy.mp4" type='video/
+		 mp4;codecs="avc1.42E01E, mp4a.40.2"' />
+		<!--type
+		You should use this attribute
+		to tell the browser what format
+		the video is-->
+		
+		 <source src="video/puppy.webm" type='video/
+		 webm;codecs="vp8, vorbis"' />
+		 <!-- codecs...The codec that was used to
+		encode the video is supplied
+		within the type attribute.-->
+		 <p>A video of a puppy playing in the snow</p>
+		 </video>
+	</body>
+</html>
